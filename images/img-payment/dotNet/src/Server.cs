@@ -35,12 +35,14 @@ public class Server
     host.Open();
     Console.WriteLine("done!\n");
     Console.WriteLine("  Listening to "+hostname+":"+port+"\n\n");
-    Console.WriteLine("Hit Return to shutdown the server.");
-    Console.ReadLine();
-
-    // Cleaning up and ending the hosting
-    host.Close ();
-    Console.WriteLine("Server shutdown complete!");
+    
+    //~ Lignes supprimées pour docker-compose : le serveur .Net s'arretait automatiquement lorsque "docker-composé"
+    //~ Console.WriteLine("Hit Return to shutdown the server.");
+    //~ Console.ReadLine();
+//~ 
+    //~ // Cleaning up and ending the hosting
+    //~ host.Close ();
+    //~ Console.WriteLine("Server shutdown complete!");
   }
 
 }

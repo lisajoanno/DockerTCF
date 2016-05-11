@@ -1,0 +1,17 @@
+version: "2"
+
+services:
+
+  payment:
+    build: img-payment/
+
+    ports:
+      - "9090:9090"
+    network_mode: "host"
+
+  j2e:
+    build: img-j2e/
+
+    ports:
+      - "8080:8080"
+    network_mode: "host"

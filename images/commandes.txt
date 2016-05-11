@@ -14,9 +14,24 @@ sudo docker build -t lisajoanno/j2e .
 sudo docker run --net="host" -p 8080:8080 lisajoanno/j2e
 
 
+/********************
+****   COMPOSE   ****
+********************/
+
+// Dans le dossier où se trouve docker-compose.yml
+
+// Pour lancer (--build pour rebuild sans se poser de question; -d pour lancer les containers en tâches de fond)
+sudo docker-compose up
+sudo docker-compose up --build -d
+
+// Pour arreter : 
+sudo docker-compose stop
+
+
 /*******************
 ****   DOCKER   ****
 *******************/
+
 
 ///////// Problemes already in use
 Si 
