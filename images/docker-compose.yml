@@ -1,15 +1,20 @@
 version: "2"
 
+#~ Les 2 services  
 services:
 
+  #~ le .net 
   payment:
+    #~ Chemin vers le dockerfile de payment
     build: img-payment/
 
     ports:
       - "9090:9090"
     network_mode: "host"
 
+     
   j2e:
+    #~ Chemin vers le dockerfile du j2e
     build: img-j2e/
 
     ports:
