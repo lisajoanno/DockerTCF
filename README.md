@@ -16,7 +16,7 @@ Nous avons implémenté deux versions du projet :
 
 Nous avons laissé le client à la racine du projet afin de pouvoir essayer les containers.
 
-## .NET et J2E séparés
+## Containers .NET et J2E séparés
 
 Les deux images sont présentes dans le dossier images/.
 Le Dockerfile du container du service de paiement est dans img-payment.
@@ -42,8 +42,9 @@ On expose le port 8080 et on a besoin de spécifier --net="host" afin que le ser
 Dans le dossier images/ se trouve le docker-compose.yml.
 Pour lancer la composition :
 
-    sudo docker-compose up
+    cd images/
+    docker-compose up
 
-Ou, pour rebuild les containers :
+Et pour rebuild les containers :
 
     sudo docker-compose up --build
